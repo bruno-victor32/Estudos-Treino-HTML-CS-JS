@@ -1,0 +1,42 @@
+<!--
+Input Range
+O input do tipo range é um controle para selecionar um valor numérico, funcionando como um "slider" ou como um "dial control". É possível definir valores mínimo e máximo, além de um passo específico. O valor padrão pode ser ajustado conforme a necessidade.
+
+min/max -> number
+step permite fazer passo a passo
+-->
+
+<!--Por padrão o input do tipo range está do 0 ao 100-->
+<form >
+  <input type="range" name="total">
+  <button>Submit</button>
+</form>
+
+<!--O input do tipo range vai começar no 20 e o maximo será 200-->
+<form >
+  <input type="range" name="total" min="20" max="200">
+  <button>Submit</button>
+</form>
+
+<!--O input do tipo range vai começar no 0 e o maximo será 200, o passo será de 20 em 20, ou seja, vai pular de 20 em 20-->
+<form >
+  <input type="range" name="total" min="0" max="200" step="20">
+  <button>Submit</button>
+</form>
+
+<!--O input do tipo range vai começar no 0 e o maximo será 200, o passo será de 20 em 20, ou seja, vai pular de 20 em 20.
+Value é o valor que ele vai resetar, ou sejá iniciar o range-->
+<form >
+  <input type="range" name="total" min="0" max="200" step="20" value="200">
+  <button>Submit</button>
+</form>
+
+<form ></form>
+  <input type="range" name="total" min="0" max="200" step="20" value="0">
+  <button>Submit</button>
+</form>
+
+<form ></form>
+  <input type="range" name="total" min="0" max="200" step="20" value="40">
+  <button>Submit</button>
+</form>

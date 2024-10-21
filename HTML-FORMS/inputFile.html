@@ -1,0 +1,49 @@
+<!--
+file
+O input do tipo "file" vai enviar 1 ou mais
+arquivos para o formulário
+
+Sempre devemos colocar no form enctype="multipart/form-data" para ser possível enviar os arquivos para o formulário
+
+O "multiple" permite enviar mais arquivos para o formulário
+
+O "accept " é os tipos de arquivos que eu aceito. Exemplo: .doc , image/* , audio/mp3
+
+Observação: O uso do método post é recomendado para receber os arquivos no backend.
+-->
+
+
+<form enctype="multipart/form-data">
+  <input type="file" name="foto-perfil" multiple>
+  <button>Submit</button>
+</form>
+
+<!-- Utilizando o accept e colocando .html será aceito todos os arquivos do tipo html-->
+<form enctype="multipart/form-data"></form>
+  <input type="file" name="foto-perfil" multiple accept=".html">
+  <button>Submit</button>
+</form>
+
+<!-- Utilizando o accept e colocando video/* será aceito todos os arquivos de video-->
+<form enctype="multipart/form-data"></form>
+  <input type="file" name="foto-perfil" multiple accept="video/*">
+  <button>Submit</button>
+</form>
+
+<!-- Utilizando o accept e colocando image/* será aceito todos os arquivos de imagem-->
+<form enctype="multipart/form-data"></form>
+  <input type="file" name="foto-perfil" multiple accept="video/*">
+  <button>Submit</button>
+</form>
+
+<!-- Utilizando o accept e colocando audio/mp3 será aceito todos os arquivos do tipo mp3-->
+<form enctype="multipart/form-data"></form>
+  <input type="file" name="foto-perfil" multiple accept="audio/mp3">
+  <button>Submit</button>
+</form>
+
+<!-- Utilizando o accept e colocando .mkv será aceito todos os arquivos do tipo mkv-->
+<form enctype="multipart/form-data"></form>
+  <input type="file" name="foto-perfil" multiple accept=".mkv">
+  <button>Submit</button>
+</form>

@@ -1,0 +1,74 @@
+<!--
+Select
+Neste trecho, expliquei como utilizar o campo SELECT em um formulário HTML. Mostrei como adicionar opções usando a tag OPTION, inclusive com a possibilidade de agrupá-las usando a tag OPTGROUP. Também mencionei os atributos MULTIPLE e SIZE para permitir seleções múltiplas e controlar o número de opções visíveis, respectivamente.
+
+Atributo "multiple" é do tipo boolean, é significa que eu posso selecionar mais de um atributo
+-->
+
+<form >
+  <select name="car">
+    <option value="">Selecione</option>
+  </select>
+  <button>Submit</button>
+</form>
+
+<!--Utilizando o option de outra forma-->
+<form >
+  <select name="car">
+    <option value="">Selecione</option>
+    <option label="Fiat" value="fiat">
+      <option label="Audi" value="Audi">
+  </select>
+  <button>Submit</button>
+</form>
+
+<!-- Utilizando o Multiple-->
+<form >
+  <select name="car" multiple>
+    <option value="">Selecione</option>
+    <option label="Fiat" value="fiat">
+      <option label="Audi" value="Audi">
+  </select>
+  <button>Submit</button>
+</form>
+
+<!-- Utilizando o Size, vai mostrar de dois em dois-->
+<form >
+  <select name="car" multiple size="2">
+    <option value="">Selecione</option>
+    <option label="Fiat" value="fiat">
+    <option label="Audi" value="Audi">
+    <option label="BMW" value="BMW">
+    </select>
+  <button>Submit</button>
+</form>
+
+<!--Utilizando o optgroup-->
+<form >
+  <select name="car" multiple size="6">
+    <optgroup label="Esportivo"><!--Coloco o nome das opções utilizando o label-->
+      <option label="Fiat" value="fiat">
+      <option label="Audi" value="Audi">
+      <option label="BMW" value="BMW">
+    </optgroup>
+    <optgroup label="Familia">
+      <option value="chev">Chevette</option>
+    </optgroup>
+    </select>
+  <button>Submit</button>
+</form>
+
+<!--Utilizando o optgroup-->
+<form ></form>
+  <select name="car" >
+    <optgroup label="Esportivo"><!--Coloco o nome das opções utilizando o label-->
+      <option label="Fiat" value="fiat">
+      <option label="Audi" value="Audi">
+      <option label="BMW" value="BMW">
+    </optgroup>
+    <optgroup label="Familia">
+      <option value="chev">Chevette</option>
+    </optgroup>
+    </select>
+  <button>Submit</button>
+</form>

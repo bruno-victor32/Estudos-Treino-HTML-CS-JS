@@ -1,0 +1,64 @@
+<!--
+Fieldset
+
+O Fieldset é um agrupamento de campos com o mesmo propósito em formulários HTML. É útil para organização, semântica e acessibilidade, especialmente para leitores de tela. A tag Legend define o nome visual do agrupamento e é o primeiro elemento dentro do <fieldset>. Ao desabilitar um Fieldset, todos os campos dentro dele são desativados, mas os dados não são enviados ao submeter o formulário. É possível ter vários Fieldsets em um formulário. É importante atentar para o uso correto do disable para garantir o envio correto dos dados.
+Disabled desabilita todos os elementos do grupo e não serão enviados ao submeter o formulario
+Fieldeset é importante para a semântica e acessibilidade e é bom para leitores de tela
+-->
+
+<form >
+  <fieldset>
+    <legend>Contato</legend>
+
+    <input type="text" name="nome">
+    <input type="email" name="nome">
+
+    <button>enviar</button>
+  </fieldset>
+</form>
+
+<!--Desativando todos os campos-->
+
+<form >
+  <fieldset disabled>
+    <legend>Dados bancários</legend>
+
+    <input type="text" name="nome">
+    <input type="email" name="nome">
+
+    <button>enviar</button>
+  </fieldset>
+</form>
+
+<!--Exemplo do disable, que no caso abaixo só será enviado os dados do campo nome e e-mail, os dados de emprestimo não será enviado pois está desativado-->
+
+<form >
+  <fieldset>
+    <legend>Contato</legend>
+    <input type="text" name="nome">
+    <input type="email" name="nome">
+    <button>enviar</button>
+  </fieldset>
+
+  <fieldset disabled>
+    <legend>Dados de emprestimo</legend>
+    <input type="text" name="nome" value="bancoA">
+    <button>enviar</button>
+  </fieldset>
+</form>
+
+<!--Outro exemplo-->
+<form ></form>
+  <fieldset>
+    <legend>Contato</legend>
+    <input type="text" name="nome">
+    <input type="email" name="nome">
+    <button>enviar</button>
+  </fieldset>
+
+  <fieldset >
+    <legend>Dados de emprestimo</legend>
+    <input type="text" name="nome" value="bancoA">
+    <button>enviar</button>
+  </fieldset>
+</form>

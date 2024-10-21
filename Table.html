@@ -1,0 +1,49 @@
+<!--
+<table>: Define o início e o fim da tabela.
+<thead>: Agrupa o cabeçalho da tabela.
+<tbody>: Agrupa o corpo da tabela.
+<tr>: Define uma linha na tabela.
+<th>: Define uma célula de cabeçalho (normalmente em negrito e centralizada).
+<td>: Conteúdo da célula da tabela.
+A tag <caption> em HTML é usada para adicionar um título ou legenda a uma tabela. Ela deve ser colocada logo após a tag <table>, antes de qualquer outra tag da tabela. Essa legenda fornece uma descrição da tabela, tornando seu conteúdo mais acessível e compreensível, especialmente para pessoas que usam leitores de tela.
+-->
+
+<table>
+  <caption>
+    Front-end web
+  </caption>
+  <thead>
+    <tr>
+      <th>Pessoas</th>
+      <th>Interesse em:</th>
+      <th>Idade</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Bruno</td>
+      <td>Front-end</td>
+      <td>28</td>
+    </tr>
+    <tr>
+      <td>Gracineide</td>
+      <td>Back-end</td>
+      <td>21</td>
+    </tr>
+  </tbody>
+</table>
+
+<!--FlexBox-->
+
+<div class="container">
+  <span>1</span> <!--Inline-->
+  <div>2</div>    <!--Block-->
+  <span>3</span> <!--Inline-->
+  <span>4</span> <!--Inline-->
+</div>
+
+.container{
+  display:grid;
+  grid-template-columns: 20px 20px;
+
+}

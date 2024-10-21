@@ -1,0 +1,19 @@
+/*Deslocamento da caixinha vermelha é relativo a ela mesmo
+Stacking context é como se fosse um livro em cima do outro*/
+
+div{
+  background-color: black;
+  width: 60px;
+  height: 60px;
+  margin-bottom: 5px;
+
+}
+
+.position {
+  background-color: red;
+  position: relative;
+  top: 20px;
+  left: 20px;
+  z-index: -1;
+
+}

@@ -1,0 +1,36 @@
+div {
+  width:40px;
+  height:40px;
+  border: solid;
+  text-align:center;
+  line-height:250%;
+  margin-top:4px;
+ }
+ 
+/*div:hover{
+  background-color: lightcoral;
+}*/
+
+/*div:not(.nao){
+  background-color: lightcoral;
+}*/
+
+/*section:has(div:hover) {
+  border: 2px solid red;
+}*/
+
+/*div:nth-child(3){
+  background-color: lightblue;
+}*/
+
+/*div::first-letter{
+  font-size: 40px;
+}*/
+
+div::before{
+  content: "a";
+}
+div::after{
+  content: "a";
+}
+

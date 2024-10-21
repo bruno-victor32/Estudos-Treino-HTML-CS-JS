@@ -1,0 +1,31 @@
+<!--
+Input Color
+
+O input color é uma forma de selecionar cores em interfaces web. Pode-se definir cores usando RGB no atributo "Value". O "DataList" permite criar opções para seleção, não se restringindo apenas ao input color. É possível pré-definir opções de cores para seleção.
+-->
+
+<form>
+  <input type="color" name="color" id="">
+  <button>Submit</button>
+</form>
+
+<!--Se a cor colocada no "value" for inválida, a cor será a preta-->
+
+<form></form>
+  <input type="color" name="color" value="#0FACAA">
+  <button>Submit</button>
+</form>
+
+<form></form>
+  <datalist id="colorpicker">
+    <option value="#FCAC00">
+      <option value="#ACFCD0">
+
+      </option>
+    </option>
+  </datalist>
+
+  <input type="color" name="color" value="#0FACAA" list="colorpicker">
+
+  <button>Submit</button>
+</form>

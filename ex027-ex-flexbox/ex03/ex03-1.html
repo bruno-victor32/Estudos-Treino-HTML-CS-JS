@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexible Box</title>
+  <style>
+    div.conteiner{
+      background-color: lightsalmon;
+      display: flex;
+
+
+      flex-direction: row-reverse;
+
+      /*flex-wrap: nowrap;Não vai quebrar e tenta encolher ao máximo possível enquanto der dependendo do conteudo, quando diminuir a tela*/
+
+      /*flex-wrap: wrap; A partir do momento que acaba o espaço e eu tento diminuir, o ultimo elemento/bloco será pego e vai quebrar para cima*/
+      
+      flex-wrap: wrap-reverse;/* partir do momento que acaba o espaço e eu tento diminuir, o ultimo elemento/bloco será pego e vai quebrar para baixo*/
+
+    }
+
+    div.item{
+      background-color: lightskyblue;
+      border: 1px solid black;
+      text-align: center;
+
+    }
+  </style>
+</head>
+<body>
+  <div class="conteiner"> <!--div pai-->
+    <div class="item">Exemplo de bloco A</div>
+    <div class="item">Exemplo de bloco B</div>
+    <div class="item">Exemplo de bloco C</div>
+    <div class="item">Exemplo de bloco D</div>
+    <div class="item">Exemplo de bloco E</div>
+    <div class="item">Exemplo de bloco F</div>
+    <div class="item">Exemplo de bloco G</div>
+  </div>
+</body>
+</html>

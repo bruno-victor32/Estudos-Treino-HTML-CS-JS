@@ -1,0 +1,32 @@
+<!--
+Input Number
+
+O input do tipo number permite definir um intervalo de valores mínimos e máximos, além de um incremento específico. É possível configurar atributos como min, max, step, Required e Placeholder para personalizar o comportamento do campo. O atributo Required torna obrigatório preencher o campo, enquanto o Placeholder exibe um valor sugerido.
+-->
+
+<form >
+  <input type="number">
+  <button>Submit</button>
+</form>
+
+<br><br>
+
+print(Minimo e máximo)
+<br><br>
+<!--Minimo será 16 é o máximo 18, não será permitido
+números fora dessa faixa -->
+<form >
+  <input min="16" max="18" type="number">
+  <button>Submit</button>
+</form>
+
+<br><br>
+
+print(Step)
+<br><br>
+<!--Minimo será 0 é o máximo 18 é quero que pule de número de dois em dois números, não será permitido
+números fora dessa faixa -->
+<form >
+  <input min="0" max="18" step="2" type="number">
+  <button>Submit</button>
+</form>

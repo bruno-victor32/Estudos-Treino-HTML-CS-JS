@@ -1,0 +1,31 @@
+<!--
+Label
+O label é essencial para a acessibilidade em formulários web. O Label deve estar atrelado a um input para indicar o campo corretamente. O uso do atributo "for" e do ID do input é uma prática comum, mas é possível também envolver o input dentro do label. Esconder o label no CSS é uma estratégia válida, desde que ele esteja presente no HTML. Garantir a acessibilidade é fundamental, mesmo que o label não seja visível.
+-->
+
+<!--Por padrão tenho que colocar um label atrelado a algum input, é atrelado atraves do id do input e o for do label-->
+<form>
+  <label for="nome">Nome</label>
+
+  <input type="text" name="nome" id="nome" placeholder="Coloque o seu nome">
+  <button>Submit</button>
+</form>
+
+<!--Caso eu não queira usar o "for"-->
+
+<form></form>
+  <label>
+    Nome
+    <input type="text" name="nome" id="nome" placeholder="Coloque o seu nome">
+  </label>
+  <button>Submit</button>
+</form>
+
+<!-- Outro exemplo, se usar o id-->
+<form></form>
+<label>
+  Nome
+  <input type="text" name="nome"  placeholder="Coloque o seu nome">
+</label>
+<button>Submit</button>
+</form>

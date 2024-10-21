@@ -1,0 +1,66 @@
+<!--
+Por padrão o "button" vem com um estilo padrão do "User Agent", ou seja, do navegador. O estilo padrão depende do navegador 
+
+Atributos do tipo "type":
+
+submit -> enviar o formulário/dados para um lugar."Button" por padrão é do tipo "submit"
+Quando eu tenh um botão que não tenho um tipo definido, por padrão ele é do tipo submit, 
+
+reset -> limpar os campos/dados
+
+button -> será um botão. Se eu tiver um botão que não tenho um tipo definido como "submit" ou "reset", por padrão será submit
+
+autofocus -> foco automático,é do tipo booleano Quando a página for carregada quero que o foco estejá no botão.Observação: não será todos os navegadores que vão aceitar
+
+disable -> é do tipo booleano e vai desativar o botão. Exemplo: não permitir a pessoa enviar o formulário, enquanto estiver digitando o formulário(precisa de JavaScript)
+
+name -> nome do botão, vai ser utilizado para enviar o nome do botão
+
+value -> é o valor do name. vai ser utilizado para enviar o formulario
+
+-->
+
+print(**Exemplo de atributo submit**)
+<br><br>
+<form >
+  <button type="submit">submit</button>
+</form>
+
+print(**Exemplo de atributo reset**)
+<br><br>
+<form >
+  <input type="text" name="nome">
+  <button type="reset">Limpar</button>
+</form>
+
+print(**Exemplo de atributo button**)
+<br><br>
+<form >
+  <input type="text" name="nome">
+  <button type="submit">submit 1</button>
+  <button>submit 2</button> <!-- Mesmo sem ter o tipo submit declaro, por padrão é submite-->
+</form>
+
+print(**Exemplo de atributo autofocus**)
+<br><br>
+<form >
+  <input type="text" name="nome">
+  <button type="submit">submit 1</button>
+  <button autofocus>submit 2</button>
+</form>
+
+print(**Exemplo de atributo disable**)
+<br><br>
+<form >
+  <input type="text" name="nome">
+  <button type="submit">submit 1</button>
+  <button autofocus disabled>submit 2</button>
+</form>
+
+print(**Exemplo de atributo name e value**)
+<br><br>
+<form >
+  <input type="text" name="nome">
+  <button name="botao1" value="valor_do_botao" type="submit">submit 1</button>
+  <button autofocus disabled>submit 2</button>
+</form>

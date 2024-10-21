@@ -1,0 +1,51 @@
+<!--
+
+Textarea
+
+Neste trecho, expliquei como utilizar o elemento textarea em um formulário HTML. Destaquei a importância do atributo "name" e a capacidade de inserir múltiplas linhas de texto. Recomendei evitar o uso dos atributos "rows" e "cols" e sugerir ajustes visuais via CSS. Demonstrei como definir valores máximo e mínimo de caracteres, além de explicar o atributo "wrap" para quebra de linha. Também mencionei outros atributos como "placeholder" e "required" comuns a outros inputs.
+
+Textarea
+*mais de uma linha de texto
+*útil para textos grandes
+
+
+-->
+
+<form>
+  <textarea name="texto" id="" cols="30" rows="10"></textarea>
+  <button>Submit</button>
+</form>
+
+<!--Outro exemplo-->
+<form>
+  <textarea name="texto"></textarea>
+  <button>Submit</button>
+</form>
+
+<!--Outro exemplo com valor máximo de 10 caracteres-->
+<form>
+  <textarea name="texto" maxlength="10"></textarea>
+  <button>Submit</button>
+</form>
+
+<!--Outro exemplo com valor minimo de 10 caracteres-->
+<form>
+  <textarea name="texto" minlength="10"></textarea>
+  <button>Submit</button>
+</form>
+
+<!--Outro exemplo com valor minimo de 10 caracteres e o atributo "wrap" como "off" não faz mais quebra de linha-->
+<form>
+  <textarea name="texto" minlength="10" wrap="off"></textarea>
+  <button>Submit</button>
+</form>
+
+<!-- Podemos utilizar também
+ placeholder
+ disabled
+ required se for obrigatorio escrever algo
+ -->
+ <form></form>
+  <textarea name="texto" minlength="10" placeholder="Digite o seu texto" required disabled></textarea>
+  <button>Submit</button>
+</form>

@@ -1,0 +1,41 @@
+<!--
+Checkbox, Radio e Hidden
+
+Neste vídeo, expliquei sobre os inputs do tipo checkbox e radio. Os checkboxes permitem seleções múltiplas, enquanto os radios permitem apenas uma seleção. Falei sobre os atributos Value e Checked, e como agrupar valores com o atributo Name. Também abordei o input do tipo Hidden, que é útil para enviar informações ocultas em formulários. Esse tipo de input é invisível para o usuário, mas pode ser visualizado pelos programadores nas ferramentas de desenvolvedor.
+
+checkbox -> caixas que podem ser marcadas. É uma seleção de valor, se não marcado, nenhum valor será enviado. Se marcado o valor on é enviado. O checked é do tipo boolean
+-->
+
+<!--Checkbox-->
+<form >
+  <input type="checkbox" name="carro" value="fiat" checked>
+  <button>Submit</button>
+</form>
+
+<!-- Permite multiplos valores e é agrupado pelo nome. Permite selecionar dois ou mais ao mesmo tempo-->
+<form >
+  <input type="checkbox" name="carro" value="fiat" checked>
+  <input type="checkbox" name="moto" value="honda" >
+  <button>Submit</button>
+</form>
+
+<!--radio -> ele é projetado para selecionar uma única opção de um grupo de opções-->
+
+<form >
+  <input type="radio" name="carro" value="fiat">
+  <input type="radio" name="carro" value="audi">
+  <button>Submit</button>
+</form>
+
+<form ></form>
+  <input type="radio" name="carro" value="fiat" checked>
+  <input type="radio" name="carro" value="audi">
+  <button>Submit</button>
+</form>
+
+<!--hidden é útil para enviar informações ocultas em formulários. Esse tipo de input é invisível para o usuário, mas pode ser visualizado pelos programadores nas ferramentas de desenvolvedor.-->
+
+<form >
+  <input type="hidden" name="id" value="fdafef-adfek-3423kk">
+  <button>Submit</button>
+</form>

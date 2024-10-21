@@ -1,0 +1,24 @@
+/*Na maioria das vezes que utilizamos um "position:absolute" vamos usar "position:relative" que
+esta relativo a algo,relativo ao containing block, relativo ao lugar que está ali dentro, ou seja, nesse caso está relativo a section que é o pai da "div"
+
+Se não tiver um container block proximo, ele vai respeitar todo container block inicial que é toda a área visível da nossa página */
+
+div{
+  background-color: black;
+  width: 60px;
+  height: 60px;
+  margin-bottom: 5px;
+}
+
+section{
+  position: relative;
+  border: 1px solid;
+}
+
+.position {
+  background-color: red;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  z-index: -1;
+}

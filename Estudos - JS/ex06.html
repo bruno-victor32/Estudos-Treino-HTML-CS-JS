@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eventos DOM</title>
+  <style>
+    div#area{
+      font: normal 20pt arial;
+      background: green;
+      color: white;
+      width: 200px;
+      height: 200px;
+      line-height: 200px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div id="area" onclick="clicar()"><!--Disparando o metodo/função clicar,quando clicar em cima da div vai disparar o metodo/função clicar-->
+    Interaja...
+  </div>
+
+  <script>
+    function clicar(){ /*Quando eu chamar o clicar, tudo que estiver nesse bloco será executado*/
+
+      var a = window.document.getElementById('area')//Isso aqui window.document.getElementById('area') faz uma ligação do objeto "a" do javascript com o elemento de id "area" que está dentro do html quando eu coloco do lado de fora  essa linha de cima ela serve para todas as function
+
+      a.innerText = 'Clicou!' //e esse objeto vai mudar o conteudo dele para clicou,esse clicou só vai aconteçer quando efetivamente clicar em cima do elemento
+
+      a.style.background = 'red'//quando eu clicar vai ficar vermelho
+    }
+  
+
+  </script>
+</body>
+</html>

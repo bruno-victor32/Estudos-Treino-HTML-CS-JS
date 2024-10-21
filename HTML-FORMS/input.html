@@ -1,0 +1,93 @@
+<!--Input uma das tags mais poderosas do formulário, pois ela define muitas combinações e vai aceitar uma variedades de dados. Os estilos vai definir pelo User Agent(Navegador) que está sendo utilizado.
+
+Atributos fundamentais:
+name -> o valor do input ao enviar dados para o formulário
+type -> define o tipo de dado do input
+
+Atributos gerais:
+Muitos desses atributos serão passados para vários elementos.
+
+* value Já preenche o campo automaticamente
+
+* autocomplete vai tentar auto completar baseado nas coisas que você vai colocar por padrão. Isso vai depender muito do navegador
+
+* size! permite crescer ou diminuir o tamanho númerico do seu input/campo. Geralmente definimos o tamanho do input pelo css. Quando coloco size!  exclamação sempre que for as vezes tem, as vezes não tem, ou seja, tem navegadores que aceitam ou não o uso desse atributo
+
+* autofocus é do tipo booleano
+
+* disabled Desabilita todos os campos que você quiser
+
+* readonly! Não permite alterar o dado escrito no formulário.Tem navegadores que aceitam ou não o uso desse atributo
+
+* form! permite linkar algum campo que está fora do formulario. Abaixo tem um exemplo, recomendamos deixar os campos dentro do form.Tem navegadores que aceitam ou não o uso desse atributo
+
+* required! Só posso enviar se tiver dados nele, ou seja, é obrigatorio que esse campo tenha informações .Tem navegadores que aceitam ou não o uso desse atributo.
+
+*placeholder! 
+
+-->
+
+<form>
+  <input type="text" name="nome" >
+</form>
+
+print(Exemplo: Atributo geral "value")
+
+<form>
+  <input value="mayk" type="text" name="nome" >
+</form>
+
+print(Exemplo: Atributo geral "autocomplete")
+
+<form>
+  <input value="mayk" autocomplete="url" type="text" name="nome" >
+</form>
+
+print(Exemplo: Atributo geral "size")
+
+<form>
+  <input value="mayk" size="8" type="text" name="nome" >
+</form>
+
+print(Exemplo: Atributo geral "autofocus")
+
+<form>
+  <input value="mayk" autofocus type="text" name="nome" >
+</form>
+
+print(Exemplo: Atributo geral "disabled")
+
+<form>
+  <input value="mayk" disabled type="text" name="nome" >
+</form>
+
+print(Exemplo: Atributo geral "readonly!")
+
+<form>
+  <input value="mayk" readonly type="text" name="nome" >
+</form>
+
+print(Exemplo: Atributo geral "form")
+<br><br>
+<form id="meuform">
+  <button>submit</button>
+</form>
+
+<input value="mayk" form="meuform" type="text" name="nome" >
+
+<br><br>
+print(Exemplo: Atributo geral "required")
+<br><br>
+<form>
+  <input  type="text" required name="nome" >
+</form>
+<button>submit</button>
+
+<br><br>
+print(Exemplo: Atributo geral "placeholder")
+<br><br>
+<form>
+  <input  type="text" placeholder="Coloque o seu nome" name="nome" >
+  <button>submit</button>
+</form>
+

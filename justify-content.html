@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Justify-content</title>
+  <style>
+    .container, .container2{
+      border:dashed;
+    }
+
+    .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*Quando fazemos uma inversão de eixo não temos por padrão a altura, só temos a largura. Definindo a altura vamos visualizar os espaços*/
+.container2 {
+  height: 50vh;
+  display: flex;
+flex-direction: column; /*Invertendo o eixo*/
+  justify-content: space-between;
+}
+  
+    .item, .item2{
+      --hue:0; /*Variavel*/
+      text-align:center;
+      background-color: hsl(var(--hue),100%, 70%);
+    }
+
+
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="item" style="--hue:0">1</div>
+    <div class="item" style="--hue:100">2</div>
+    <div class="item" style="--hue:200">3</div>
+    <div class="item" style="--hue:300">4</div>
+  </div>
+
+  <div class="container2">
+    <div class="item2" style="--hue:0">1</div>
+    <div class="item2" style="--hue:100">2</div>
+    <div class="item2" style="--hue:200">3</div>
+    <div class="item2" style="--hue:300">4</div>
+  </div>
+</body>
+</html>

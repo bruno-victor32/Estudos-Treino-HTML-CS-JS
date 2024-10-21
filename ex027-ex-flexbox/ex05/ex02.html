@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox centralizado</title>
+  <style>
+    *{
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+    }
+
+    body{
+      background-color: lightsalmon;
+    }
+
+    main{ 
+      background-color: lightgreen;
+      height: 100vh;/*Altura de 300px da tela*/
+      width: 100vw;/*Largura de 100% da tela*/
+
+      /*Alinhando  a caixa ao meio/centro*/
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: center;/*Vai fazer o alinhamento em relação ao main-axis*/
+      align-items: center;/*Vai fazer o alinhamento em relação ao cross-axis*/
+    }
+
+    section{
+      background-color: lightseagreen;
+      height: 200px;
+      width: 200px;
+    }
+  </style>
+</head>
+<body>
+  <main><!-- main é pai do "section"-->
+    <section>
+      <h1>Tela de Login</h1>
+    </section>
+  </main>
+</body>
+</html>

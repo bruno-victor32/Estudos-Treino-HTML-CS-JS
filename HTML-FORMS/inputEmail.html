@@ -1,0 +1,51 @@
+<!--
+* Serve para validar um e-mail
+* Pode ter um ou mais emails separados por vírgula utilizando o atributo "multiple"
+* minlength seria o tamanho mínimo de 10 caracteres
+* maxlength seria o tamanho maximo de 10 caracteres
+* pattern que é uma expressão regular para validar o campo, ou seja, é um conjunto de caracteres que serve para verificar se o e-mail inserido faz sentido com aquele padrão
+Exemplo do pattern:
+*** usuário só poderá colocar email da rocketseat
+*** pattern=".+@rocketseat\.com\.br"
+*** title="Somente emails rocketseat.com.br serão aceitos"
+-->
+
+
+<form >
+  <input type="email" name="mail" >
+  <button>Submit</button>
+</form>
+
+<br><br>
+Print("Utilizando o atributo "multiple" )
+<br><br>
+<form ></form>
+  <input type="email" name="mail" multiple>
+  <button>Submit</button>
+</form>
+
+<br><br>
+Print("Utilizando o atributo "minlength" )
+<br><br>
+<form ></form>
+  <input type="email" name="mail" minlength="10">
+  <button>Submit</button>
+</form>
+
+<br><br>
+Print("Utilizando o atributo "maxlength" )
+<!-- Se colocar um e-mail acima de 10 caracteres terá um erro e não vai aceitar o e-mail-->
+<br><br>
+<form ></form>
+  <input type="email" name="mail" maxlength="10">
+  <button>Submit</button>
+</form>
+
+<br><br>
+Print("Utilizando o atributo "pattern" )
+<!-- No pattern, ponto significa que ele aceita qualquer caractere, o simbolo "mais" significa que ele aceita esse caractere uma ou mais vezes -->
+<br><br>
+<form ></form>
+  <input type="email" name="mail" pattern=".+@rocketseat\.com\" required title="Emails apenas @rocketseat">
+  <button>Submit</button>
+</form>
